@@ -1,0 +1,495 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#include ""res\\MFCApplication3.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""      // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MFCApplication3.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       ID_APP_EXIT
+        MENUITEM "Generate XAML",               ID_FILE_GENERATEXAML
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About MFCApplication3...",   ID_APP_ABOUT
+    END
+    POPUP "Element Options"
+    BEGIN
+        MENUITEM "Add Label",                   ID_ELEMENTOPTIONS_ADDLABEL
+        MENUITEM "Add RectButton",              ID_ELEMENTOPTIONS_ADDCBUTTON
+        MENUITEM "Add Editor",                  ID_ELEMENTOPTIONS_ADDEDITOR
+        MENUITEM "Add Entry",                   ID_ELEMENTOPTIONS_ADDENTRY
+    END
+    POPUP "RePaint()"
+    BEGIN
+        MENUITEM "RePaint",                     ID_REPAINT_REPAINT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About MFCApplication3"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "MFCApplication3, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2017",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_DIALOG_LABEL DIALOGEX 0, 0, 295, 225
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Element Feature Selection"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,186,204,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,238,204,50,14
+    PUSHBUTTON      "Choose Background Color",IDC_BackColorBUTTON,50,52,94,16
+    PUSHBUTTON      "Choose Text Color",IDC_TextColorBUTTON,159,53,69,14
+    PUSHBUTTON      "Choose Font",IDC_FontBUTTON,102,174,67,14,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "Caption",IDC_STATIC,51,87,26,8
+    EDITTEXT        IDC_EDIT1,87,86,158,14,ES_AUTOHSCROLL
+    CONTROL         "Micro",IDC_RADIO_MICRO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,43,125,31,10
+    CONTROL         "Small",IDC_RADIO_SMALL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,86,124,32,10
+    CONTROL         "Medium",IDC_RADIO_MEDIM,"Button",BS_AUTORADIOBUTTON | WS_GROUP,129,124,40,10
+    GROUPBOX        "Font Size",IDC_STATIC,34,111,229,34
+    CONTROL         "Large",IDC_RADIO_LARGE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,175,124,34,10
+    CONTROL         "Default",IDC_RADIO_DEFAULT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,219,124,39,10
+    CONTROL         "Serif",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | BS_CENTER | WS_GROUP,73,153,32,10
+    CONTROL         "Monospace",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | BS_CENTER | WS_GROUP,112,153,52,10
+    CONTROL         "Sans-Serif",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | BS_CENTER | WS_GROUP,170,153,49,10
+    GROUPBOX        "Font-Face",IDC_STATIC,33,144,228,25
+END
+
+IDD_DIALOG_BUTTON DIALOGEX 0, 0, 295, 218
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Element Feature Selection"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,186,197,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,238,197,50,14
+    PUSHBUTTON      "Choose Background Color",IDC_BackColorBUTTON,17,32,94,16
+    PUSHBUTTON      "Choose Text Color",IDC_TextColorBUTTON,119,32,69,16
+    PUSHBUTTON      "Choose Font",IDC_FontBUTTON,103,174,67,14,NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT2,99,60,40,14,ES_AUTOHSCROLL
+    LTEXT           "Border Radius",IDC_STATIC,49,62,46,8
+    EDITTEXT        IDC_EDIT3,201,60,40,14,ES_AUTOHSCROLL
+    LTEXT           "Caption",IDC_STATIC,51,87,26,8
+    EDITTEXT        IDC_EDIT1,87,86,158,14,ES_AUTOHSCROLL
+    CONTROL         "Micro",IDC_RADIO_MICRO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,43,125,31,10
+    CONTROL         "Small",IDC_RADIO_SMALL,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,86,124,32,10
+    CONTROL         "Medium",IDC_RADIO_MEDIM,"Button",BS_AUTORADIOBUTTON,129,124,40,10
+    GROUPBOX        "Font Size",IDC_STATIC,34,111,229,34
+    CONTROL         "Large",IDC_RADIO_LARGE,"Button",BS_AUTORADIOBUTTON,175,124,34,10
+    CONTROL         "Default",IDC_RADIO_DEFAULT,"Button",BS_AUTORADIOBUTTON,219,124,39,10
+    CONTROL         "Serif",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | BS_CENTER | WS_GROUP,73,153,32,10
+    CONTROL         "Monospace",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | BS_CENTER,112,153,52,10
+    CONTROL         "Sans-Serif",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | BS_CENTER,170,153,49,10
+    GROUPBOX        "Font-Face",IDC_STATIC,33,144,228,25
+    LTEXT           "Border Width",IDC_STATIC,151,63,43,8
+    PUSHBUTTON      "Choose Border Color",IDC_BUTTON1,199,32,78,16
+END
+
+IDD_DIALOG_EDITOR DIALOGEX 0, 0, 295, 165
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Editor Feature Selection"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,186,144,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,238,144,50,14
+    PUSHBUTTON      "Choose Background Color",IDC_BackColorBUTTON,37,38,94,16
+    PUSHBUTTON      "Choose Text Color",IDC_TextColorBUTTON,160,39,69,16
+    LTEXT           "Caption",-1,55,76,26,8
+    EDITTEXT        IDC_EDIT1,87,73,158,14,ES_MULTILINE | ES_AUTOHSCROLL
+    CONTROL         "Telephonic",IDC_RADIO_MICRO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,30,113,47,10
+    CONTROL         "Chat / Text",IDC_RADIO_SMALL,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,83,113,53,10
+    CONTROL         "Email",IDC_RADIO_MEDIM,"Button",BS_AUTORADIOBUTTON,142,113,32,10
+    GROUPBOX        "Keyboard",-1,16,99,264,34
+    CONTROL         "Numeric",IDC_RADIO_LARGE,"Button",BS_AUTORADIOBUTTON,180,113,41,10
+    CONTROL         "Default",IDC_RADIO_DEFAULT,"Button",BS_AUTORADIOBUTTON,227,113,39,10
+END
+
+IDD_DIALOG_ENTRY DIALOGEX 0, 0, 295, 165
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Entry Feature Selection"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,186,144,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,238,144,50,14
+    PUSHBUTTON      "Choose Background Color",IDC_BackColorBUTTON,35,20,94,16
+    PUSHBUTTON      "Choose Text Color",IDC_TextColorBUTTON,161,22,69,16
+    LTEXT           "Placeholder",IDC_STATIC,47,75,38,8
+    EDITTEXT        IDC_EDIT1,87,73,158,14,ES_AUTOHSCROLL
+    CONTROL         "Telephonic",IDC_RADIO_MICRO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,30,113,47,10
+    CONTROL         "Chat / Text",IDC_RADIO_SMALL,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,83,113,53,10
+    CONTROL         "Email",IDC_RADIO_MEDIM,"Button",BS_AUTORADIOBUTTON,142,113,32,10
+    GROUPBOX        "Keyboard",IDC_STATIC,16,99,264,34
+    CONTROL         "Numeric",IDC_RADIO_LARGE,"Button",BS_AUTORADIOBUTTON,180,113,41,10
+    CONTROL         "Default",IDC_RADIO_DEFAULT,"Button",BS_AUTORADIOBUTTON,227,113,39,10
+    CONTROL         "Yes",IDC_RADIO_YES,"Button",BS_AUTORADIOBUTTON | WS_GROUP,123,50,27,10
+    CONTROL         "No",IDC_RADIO_NO,"Button",BS_AUTORADIOBUTTON,159,50,25,10
+    LTEXT           "Password Field",IDC_STATIC,66,50,48,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "MFCApplication3"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "MFCApplication3.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "MFCApplication3.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DIALOG_LABEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_DIALOG_BUTTON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_DIALOG_EDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_DIALOG_ENTRY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_LABEL AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_BUTTON AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_EDITOR AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_ENTRY AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "MFCApplication3"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "MFCApplication3"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle Status Bar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#include "res\MFCApplication3.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"      // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
